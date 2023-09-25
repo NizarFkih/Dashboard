@@ -1,0 +1,27 @@
+div.container{
+    padding:15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height:65px
+}
+#Search{
+    border-radius: 5px;
+    border:1px #3f3e3e33 solid;
+    height:37px;
+    width:160px;
+}
+#Search:placeholder-shown{
+    color:#333;
+    padding-left:30px;
+}
+#searchIcon{
+    position:relative;
+    top:6px;
+    left:34px
+}
+#avatar{
+    height: 28px;
+    max-width: 100%;
+}
