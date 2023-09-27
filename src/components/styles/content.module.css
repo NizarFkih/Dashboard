@@ -4,12 +4,11 @@ div#container {
   min-height: 100vh;
   position: relative;
   left: 220px;
-  top: 65px;
 }
 h1#title {
   position: relative;
   text-transform: capitalize;
-  padding: 20px 20px 40px 20px;
+  margin: 20px 20px 40px 20px;
 }
 h1#title::before {
   content: "";
@@ -17,8 +16,8 @@ h1#title::before {
   height: 3px;
   width: 50px;
   background-color: white;
-  left: 20px;
-  bottom: 30px;
+  left: 0px;
+  bottom: -10px;
   z-index: 2;
 }
 h1#title::after {
@@ -27,7 +26,7 @@ h1#title::after {
   height: 3px;
   width: 10%;
   background-color: black;
-  left: 20px;
-  bottom: 30px;
+  left: 0px;
+  bottom: -10px;
   z-index: 1;
 }

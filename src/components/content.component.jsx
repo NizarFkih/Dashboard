@@ -1,13 +1,15 @@
-import classes from "./styles/content.module.css"
-import Header from "./Header.component"
+import classes from "./styles/content.module.css";
+import Header from "./Header.component";
+import ProjectPage from "../Pages/ProjectsSection.component";
 const Content = () => {
   let Section = window.location.pathname.split("");
   Section.shift();
-  Section=Section.join("")
+  Section = Section.join("");
   return (
     <div id={classes.container}>
-      <Header/>
+      <Header />
       <h1 id={classes.title}>{Section}</h1>
+      {Section === "dashboard" ? <p>Hello in Main Dashboard</p> :Section==="projects"? <ProjectPage />:<p>Soon ..</p>}
     </div>
   );
 };
