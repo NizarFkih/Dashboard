@@ -1,0 +1,54 @@
+#course {
+  border-radius: 6px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+#courseCapture {
+  height: auto;
+  max-width: 100%;
+}
+img#instructor {
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+}
+div#courseTextContent {
+  padding: 20px;
+}
+p#courseDescription {
+  margin: 15px 0;
+  color: #888;
+}
+div#courseInfo {
+  border-top: 1px solid #888;
+  position: relative;
+  padding: 15px;
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+}
+div#courseInfo::before {
+  content: "Course Info";
+  width: fit-content;
+  position: absolute;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #0075ff;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 10px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+img#studentIcon {
+  height: auto !important ;
+  max-width: 16px;
+}
