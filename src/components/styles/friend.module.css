@@ -100,8 +100,6 @@ div#friendFooter .btnRemove::before {
   border-radius: 6px;
   background-color: white;
   opacity: 0;
-  color: black;
-  background-color: white;
   transition: all 0.8s;
 }
 div#friendFooter .btnRemove:active::before {

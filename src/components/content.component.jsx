@@ -3,6 +3,7 @@ import Header from "./Header.component";
 import ProjectPage from "../Pages/ProjectsSection.component";
 import CoursesSection from "../Pages/CoursesSection.component";
 import FriendsSection from "../Pages/FriendsSection.component";
+import PlansSection from "../Pages/PlansSection.component";
 const Content = () => {
   let Section = window.location.pathname.split("");
   Section.shift();
@@ -19,6 +20,8 @@ const Content = () => {
         <CoursesSection />
       ) : Section === "friends" ? (
         <FriendsSection />
+      ) : Section === "plans" ? (
+        <PlansSection />
       ) : (
         <p>Soon ..</p>
       )}
