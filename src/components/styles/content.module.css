@@ -4,6 +4,7 @@ div#container {
   min-height: 100vh;
   position: relative;
   left: 220px;
+  padding-bottom: 20px;
 }
 h1#title {
   position: relative;

@@ -7,6 +7,10 @@ const CoursesSection = () => {
       <Course />
       <Course />
       <Course />
+      <Course />
+      <Course />
+      <Course />
+     
     </div>
   );
 };

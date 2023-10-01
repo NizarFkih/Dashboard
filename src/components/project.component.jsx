@@ -16,7 +16,7 @@ const Project = (props) => {
       <div></div> <span>{props.price}</span>
     </div> */
     <div id={classes.project}>
-      <date>25/548/55</date>
+      <date className={classes.createdAt}>25/548/55</date>
       <h4 className="project-title">Project title</h4>
       <p id={classes.projectTextContent}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum facere

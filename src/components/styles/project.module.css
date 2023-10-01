@@ -3,13 +3,14 @@ div#project {
   border-radius: 6px;
   padding: 20px;
   position: relative;
+  
 }
 #projectTextContent {
-    margin-top: 5px;
+  margin-top: 5px;
   margin-bottom: 30px;
   color: #888;
 }
-date {
+date.createdAt {
   position: absolute;
   right: 20px;
   color: #888;

@@ -5,6 +5,10 @@ const ProjectPage = () => {
     <div id={classes.container}>
         <Project/>
         <Project/>
+        <Project/>
+        <Project/>
+        <Project/>
+        <Project/>
     </div>
   );
 };

@@ -1,0 +1,122 @@
+div#friendContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+div#friendHeader {
+  text-align: center;
+  position: relative;
+}
+div#friendHeader img#friendPicture {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+p#friendJob{
+    color:#888;
+    font-size:13px;
+    text-transform: capitalize;
+}
+div#friendHeader div#contactActions {
+  position: absolute;
+  width: fit-content;
+  height: 32px;
+  display: flex;
+}
+div#friendHeader div#contactActions a {
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  margin-right: 5px;
+}
+img.iconContact {
+  max-width: 100%;
+  width: 18px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+div#friendInfo {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #dfdddd;
+  border-bottom: 1px solid #dfdddd;
+  padding: 15px 0px;
+  margin: 15px 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+img.infoIcons {
+  height: auto;
+  width: 19px;
+  max-width: 100%;
+  margin-right: 5px;
+}
+span.icon {
+  display: flex;
+  align-items: center;
+}
+div#friendFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+div#friendFooter .btn {
+  position: relative;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  width: 64px;
+  cursor: pointer;
+  outline: none;
+}
+
+div#friendFooter .btnShow {
+  background-color: #0075ff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.7;
+  padding: 4px 10px;
+}
+
+div#friendFooter .btnRemove {
+  background-color: #f44336;
+  padding: 7px 1px;
+}
+div#friendFooter .btnRemove::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 6px;
+  background-color: white;
+  opacity: 0;
+  color: black;
+  background-color: white;
+  transition: all 0.8s;
+}
+div#friendFooter .btnRemove:active::before {
+  transition: 0s;
+  left: 50%;
+  top: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 1;
+}
+span#footerActions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+div#friendFooter date {
+  color: #888;
+}
