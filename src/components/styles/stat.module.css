@@ -1,0 +1,25 @@
+div#statContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #888;
+  border:1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+div#statContainer img {
+  width: 42px;
+  height: 42px;
+  
+}
+div#statInfo{
+    position: relative;
+    left:-25px;
+}
+
+#fileUploader{
+    padding:5px 10px;
+    border:1px solid red
+}

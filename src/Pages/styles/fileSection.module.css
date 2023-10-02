@@ -1,0 +1,33 @@
+div#filesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+}
+div#uploadedFilesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: calc(100% - 320px);
+}
+div#statsContainer {
+  width: 260px;
+  min-width: 260px;
+  height: 430px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  right: 20px;
+}
+h2#statsHeader {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#fileUploader {
+  
+  border: 1px solid red;
+  cursor: pointer;
+  overflow: hidden;
+  width: 66px;
+}
