@@ -1,17 +1,17 @@
 import classes from "./styles/friend.module.css";
-const Friend = () => {
+const Friend = ({ data }) => {
   return (
     <div id={classes.friendContainer}>
       <div id={classes.friendHeader}>
         <div id={classes.contactActions}>
-          <a href="/">
+          <a href="/friends">
             <img
               src="/assets/phone.png"
               alt="phone-icon"
               className={classes.iconContact}
             />
           </a>
-          <a href="/">
+          <a href="/friends">
             <img
               src="/assets/message.png
           "
@@ -21,12 +21,15 @@ const Friend = () => {
           </a>
         </div>
         <img
-          src="/assets/friend-01.jpg"
+          src={`/assets/${data.profilePicture}`}
           alt="friend-profile-picture"
           id={classes.friendPicture}
         />
-        <h4>Friend Name</h4>
-        <p id={classes.friendJob}>Job</p>
+        {data.vip?<div id={classes.vip}>
+          <img src="/assets/crown.png" alt="" />
+        </div>:""}
+        <h4>{data.name}</h4>
+        <p id={classes.friendJob}>{data.job}</p>
       </div>
       <div id={classes.friendInfo}>
         <span className={classes.icon}>
@@ -35,7 +38,7 @@ const Friend = () => {
             alt="smile-icon"
             className={classes.infoIcons}
           />
-          <p>14 Friend</p>
+          <p>{data.connections} Friend</p>
         </span>
         <span className={classes.icon}>
           <img
@@ -43,7 +46,7 @@ const Friend = () => {
             alt="commit-icon"
             className={classes.infoIcons}
           />
-          <p>12 Projects</p>
+          <p>{data.projects} Projects</p>
         </span>
         <span className={classes.icon}>
           <img
@@ -51,7 +54,7 @@ const Friend = () => {
             alt="article-icon"
             className={classes.infoIcons}
           />
-          <p>08 Articles</p>
+          <p>{data.articles} Articles</p>
         </span>
       </div>
       <div id={classes.friendFooter}>

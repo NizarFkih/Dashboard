@@ -12,10 +12,27 @@ div#friendHeader img#friendPicture {
   border-radius: 50%;
   margin-top: 20px;
 }
-p#friendJob{
-    color:#888;
-    font-size:13px;
-    text-transform: capitalize;
+div#vip {
+  position: absolute;
+  top: 0px;
+  right: 140px;
+  transform: rotate(30deg);
+  animation: 1.1s linear 0s infinite alternate fly;
+}
+@keyframes fly {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -8px;
+    right: 132px;
+  }
+}
+
+p#friendJob {
+  color: #888;
+  font-size: 13px;
+  text-transform: capitalize;
 }
 div#friendHeader div#contactActions {
   position: absolute;
