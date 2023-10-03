@@ -1,17 +1,22 @@
 import classes from "./styles/course.module.css";
-const Course = () => {
+const Course = ({ data }) => {
   return (
     <div id={classes.course}>
       <div>
-        <img id={classes.courseCapture} src="/assets/course-01.jpg" alt="" />
-         <img id={classes.instructor} src="/assets/team-03.png" alt=""  />
+        <img
+          id={classes.courseCapture}
+          src={`/assets/${data.cover}`}
+          alt="course-cover"
+        />
+        <img
+          id={classes.instructor}
+          src={`/assets/${data.instructor}`}
+          alt="instructor"
+        />
       </div>
       <div id={classes.courseTextContent}>
-        <h4>Course Title</h4>
-        <p id={classes.courseDescription}>
-          Master The Art Of Web Designing And Mocking, Prototyping And Creating
-          Web Design Architecture
-        </p>
+        <h4>{data.name}</h4>
+        <p id={classes.courseDescription}>{data.description}</p>
       </div>
       <div id={classes.courseInfo}>
         <span>
@@ -20,9 +25,9 @@ const Course = () => {
             alt="User Icon"
             src="/assets/user.png"
           />
-          950
+          {data.students}
         </span>
-        <span>$165</span>
+        <span>{data.price===0?"Free":`$ ${data.price}`}</span>
       </div>
     </div>
   );

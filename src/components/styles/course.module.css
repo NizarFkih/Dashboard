@@ -26,6 +26,7 @@ div#courseTextContent {
 p#courseDescription {
   margin: 15px 0;
   color: #888;
+  font-size: 14px;
 }
 div#courseInfo {
   border-top: 1px solid #888;
