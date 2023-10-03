@@ -1,44 +1,42 @@
 import classes from "./styles/project.module.css";
-const Project = (props) => {
+const Project = ({ data }) => {
   return (
-    /*  <div>
-      <p>{props.date}</p>
-      <h3 className="text-center">{props.title}</h3>
-      <p>{props.content}</p>
-      {props.team.map((member) => (
-        <img alt="" src="" />
-      ))}
-      <hr />
-      {props.tools.map((tool) => (
-        <span>tool</span>
-      ))}
-      <hr />
-      <div></div> <span>{props.price}</span>
-    </div> */
     <div id={classes.project}>
-      <date className={classes.createdAt}>25/548/55</date>
-      <h4 className="project-title">Project title</h4>
-      <p id={classes.projectTextContent}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum facere
-        veritatis, neque eius consequatur repellat! Nesciunt
-      </p>
+      <date className={classes.createdAt}>{data.createdAt}</date>
+      <h4 className="project-title">{data.name}</h4>
+      <p id={classes.projectTextContent}>{data.description}</p>
       <div>
-        <img alt="" src="/assets/avatar.png" className={classes.member} />
-        <img alt="" src="/assets/avatar.png" className={classes.member} />
-        <img alt="" src="/assets/avatar.png" className={classes.member} />
-        <img alt="" src="/assets/avatar.png" className={classes.member} />
+        {data.team.map((member) => (
+          <img alt="" src={`/assets/${member}`} className={classes.member} />
+        ))}
       </div>
-     
-     <div id={classes.tags}>
-       <span className={classes.tag}>Programming</span>
-       <span className={classes.tag}>Design</span>
-       <span className={classes.tag}>Hosting</span>
-       <span className={classes.tag}>Marketing</span>
-     </div>
-    
-     <div id={classes.projectFooter}>
-       <span id={classes.progressBar}><span id={classes.progressLevel}></span></span> <span>1200$</span>
-     </div>
+
+      <div id={classes.tags}>
+        {data.tags.map((tag) => (
+          <span className={classes.tag}>{tag}</span>
+        ))}
+      </div>
+
+      <div id={classes.projectFooter}>
+        <span id={classes.progressBar}>
+          <span
+            id={classes.progressLevel}
+            style={{
+              width: `${data.progress * 10}%`,
+              backgroundColor: `${
+                data.progress <= 2.5
+                  ? "#f44336"
+                  : data.progress <= 5
+                  ? "#ffe800"
+                  : data.progress < 7
+                  ? "#22c55e"
+                  : "#0075ff"
+              }`,
+            }}
+          ></span>
+        </span>
+        <span>$ {data.budget}</span>
+      </div>
     </div>
   );
 };
