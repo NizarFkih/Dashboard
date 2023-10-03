@@ -1,5 +1,5 @@
 import styles from "./styles/file.module.css";
-const File = () => {
+const File = ({ data }) => {
   return (
     <div id={styles.fileContainer}>
       <div id={styles.fileBody}>
@@ -8,19 +8,19 @@ const File = () => {
           alt="download-icon"
           id={styles.downloadIcon}
         />
-        <div style={{textAlign:"center" }}>
+        <div style={{ textAlign: "center" }}>
           <img
-            src="/assets/pdf.svg"
+            src={`/assets/${data.fileType}.svg`}
             alt="file-extension"
             id={styles.filePicture}
           />
-          <p id={styles.fileName}>fileName.ext</p>
+          <p id={styles.fileName}>{data.name}</p>
         </div>
-        <p>uploaded By</p>
+        <p>{data.uploader}</p>
       </div>
       <div id={styles.fileFooter}>
-        <date>02/10/2023</date>
-        <span>5.5MB</span>
+        <date>{data.uploadedAt}</date>
+        <span>{data.fileSize}</span>
       </div>
     </div>
   );

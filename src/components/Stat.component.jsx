@@ -1,13 +1,13 @@
 import styles from "./styles/stat.module.css";
-const Stat = () => {
+const Stat = ({ data }) => {
   return (
     <div id={styles.statContainer}>
-      <img src="/assets/docx-file.png" alt="docx-icon" />
+      <img src={`/assets/${data.fileType}-file.png`} alt="docx-icon" />
       <div id={styles.statInfo}>
-        <p style={{ color: "black" }}>Doc Files</p>
-        <p> 130</p>
+        <p style={{ color: "black",textTransform:"capitalize" }}>{data.fileType} Files</p>
+        <p> {data.fileNumber}</p>
       </div>
-      <span>6.5GB</span>
+      <span>{data.size}</span>
     </div>
   );
 };

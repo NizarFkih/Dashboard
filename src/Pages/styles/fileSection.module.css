@@ -13,7 +13,6 @@ div#uploadedFilesContainer {
 div#statsContainer {
   width: 260px;
   min-width: 260px;
-  height: 430px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -24,10 +23,28 @@ h2#statsHeader {
   font-weight: 600;
   margin-bottom: 15px;
 }
-#fileUploader {
-  
-  border: 1px solid red;
+.uploadBtn {
+  display: none;
+}
+div#statsContainer label {
+  display: inline-block;
+  background-color: #0075ff;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  user-select: none;
   cursor: pointer;
-  overflow: hidden;
-  width: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+div#statsContainer div#statFooter {
+  text-align: center;
+}
+div#statsContainer div#statFooter img {
+  width: 22px;
+  margin-right: 5px;
 }

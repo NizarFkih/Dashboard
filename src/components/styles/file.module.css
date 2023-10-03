@@ -9,6 +9,7 @@ div#fileContainer{
 div#fileContainer img#downloadIcon{
     width:16px ;
     height: 16px;
+    cursor: pointer;
 }
 div#fileContainer img#filePicture{
     width: 64px;
