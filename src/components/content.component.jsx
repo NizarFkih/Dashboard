@@ -5,6 +5,7 @@ import CoursesSection from "../Pages/CoursesSection.component";
 import FriendsSection from "../Pages/FriendsSection.component";
 import PlansSection from "../Pages/PlansSection.component";
 import FilesSection from "../Pages/FilesSection.component";
+import Profile from "../Pages/Profile.component";
 const Content = () => {
   let Section = window.location.pathname.split("");
   Section.shift();
@@ -24,9 +25,9 @@ const Content = () => {
       ) : Section === "plans" ? (
         <PlansSection />
       ) : Section === "files" ? (
-        <FilesSection/>
+        <FilesSection />
       ) : (
-        <p>Soon ..</p>
+        (Section = "profile" ? <Profile /> : <p>Soon ..</p>)
       )}
     </div>
   );

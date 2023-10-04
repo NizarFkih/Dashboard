@@ -3,7 +3,6 @@ div#project {
   border-radius: 6px;
   padding: 20px;
   position: relative;
-  
 }
 #projectTextContent {
   margin-top: 5px;
@@ -39,18 +38,7 @@ div#tags {
   border-bottom: 1px solid #3333;
   padding: 10px;
 }
-span.tag {
-  background-color: #eeeeee;
-  width: fit-content;
-  font-size: 13px;
-  font-weight: 400;
-  margin-right: 5px;
-  padding: 3px 8px;
-  border-radius: 6px;
-  font-family: "Open sans";
-  text-transform: capitalize;
 
-}
 div#projectFooter {
   display: flex;
   justify-content: space-between;

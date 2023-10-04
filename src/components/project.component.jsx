@@ -1,3 +1,4 @@
+import Tag from "./common/Tag.component";
 import classes from "./styles/project.module.css";
 const Project = ({ data }) => {
   return (
@@ -13,7 +14,7 @@ const Project = ({ data }) => {
 
       <div id={classes.tags}>
         {data.tags.map((tag) => (
-          <span className={classes.tag}>{tag}</span>
+          <Tag data={{content:tag}} />
         ))}
       </div>
 
