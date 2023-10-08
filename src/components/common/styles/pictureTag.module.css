@@ -1,0 +1,16 @@
+div#tagContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+}
+ div#tagContainer:hover {
+    z-index: 20;
+  } 
+div#tagContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}

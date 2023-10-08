@@ -4,14 +4,10 @@ div#friendContainer {
   border-radius: 6px;
 }
 div#friendHeader {
-  text-align: center;
-  position: relative;
+ position: relative;
+ text-align: center;
 }
-div#friendHeader img#friendPicture {
-  width: 100px;
-  border-radius: 50%;
-  margin-top: 20px;
-}
+
 div#vip {
   position: absolute;
   top: 0px;

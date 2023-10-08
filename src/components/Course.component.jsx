@@ -1,5 +1,14 @@
+import PictureTag from "./common/PictureTag.comoponent";
 import classes from "./styles/course.module.css";
 const Course = ({ data }) => {
+  const customStyle = {
+    width: "64px",
+    height: "64px",
+    position: " absolute",
+    left: "20px",
+    top: "20px",
+    zIndex: "2",
+  };
   return (
     <div id={classes.course}>
       <div>
@@ -8,10 +17,12 @@ const Course = ({ data }) => {
           src={`/assets/${data.cover}`}
           alt="course-cover"
         />
-        <img
-          id={classes.instructor}
-          src={`/assets/${data.instructor}`}
-          alt="instructor"
+        <PictureTag
+          data={{
+            path: `/assets/${data.instructor}`,
+            alt: "Instructor",
+            customStyle,
+          }}
         />
       </div>
       <div id={classes.courseTextContent}>
@@ -27,7 +38,7 @@ const Course = ({ data }) => {
           />
           {data.students}
         </span>
-        <span>{data.price===0?"Free":`$ ${data.price}`}</span>
+        <span>{data.price === 0 ? "Free" : `$ ${data.price}`}</span>
       </div>
     </div>
   );
