@@ -1,0 +1,27 @@
+span#progressBar {
+    position: relative;
+    width: 50%;
+    height: 8px;
+    border-radius: 7px;
+    background-color: #888;
+    z-index: 5;
+  }
+  
+  span#progressLevel {
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    border-radius: 7px;
+    background-color: peru;
+    z-index: 10;
+  }
+  span#progressValue{
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 6px;
+    bottom: 120%;
+    background-color: inherit;
+    color: white;
+    font-size: 13px;
+  }
+  

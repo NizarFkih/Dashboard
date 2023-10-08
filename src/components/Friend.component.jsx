@@ -1,5 +1,12 @@
 import classes from "./styles/friend.module.css";
+import PictureTag from "./common/PictureTag.comoponent";
 const Friend = ({ data }) => {
+  const customStyle = {
+    width: "100px",
+    marginTop: "20px",
+    display: "inline-block",
+    border: "none",
+  };
   return (
     <div id={classes.friendContainer}>
       <div id={classes.friendHeader}>
@@ -20,14 +27,16 @@ const Friend = ({ data }) => {
             />
           </a>
         </div>
-        <img
-          src={`/assets/${data.profilePicture}`}
-          alt="friend-profile-picture"
-          id={classes.friendPicture}
+        <PictureTag
+          data={{ path: `/assets/${data.profilePicture}`, customStyle }}
         />
-        {data.vip?<div id={classes.vip}>
-          <img src="/assets/crown.png" alt="" />
-        </div>:""}
+        {data.vip ? (
+          <div id={classes.vip}>
+            <img src="/assets/crown.png" alt="" />
+          </div>
+        ) : (
+          ""
+        )}
         <h4>{data.name}</h4>
         <p id={classes.friendJob}>{data.job}</p>
       </div>
