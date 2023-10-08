@@ -1,0 +1,55 @@
+div#profileContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #888;
+  font-size: 15px;
+}
+
+div#profile,
+div#profileSkills,
+div#profileHistory {
+  background-color: white;
+  border-radius: 15px;
+}
+div#profileSkills,
+div#profileHistory {
+  padding: 20px;
+}
+div#profile {
+  display: flex;
+}
+div#profile img {
+  width: 120px;
+  border-radius: 50%;
+}
+div#profileInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+div#additionalInfo {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+}
+div#profile div#profileCard {
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div#additionalInfo h2 {
+  color: black;
+}
+div#additionalInfo div#tagLine {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: black;
+  font-size: 16px;
+}

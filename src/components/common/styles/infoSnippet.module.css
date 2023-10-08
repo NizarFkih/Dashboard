@@ -1,0 +1,30 @@
+div#infoSnippetContainer {
+  padding: 20px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-transform: capitalize;
+}
+div#infoSnippetContainer:last-child {
+  border-bottom: none;
+}
+div#infoSnippetContainer:hover {
+  background-color: #f9f9f9;
+}
+div#infoSnippetContent {
+  display: flex;
+  justify-content: flex-start;
+  gap:15px;
+  flex-wrap: wrap;
+}
+div#infoSnippetContainer h4 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+div#infoSnippetContainer div#infoSnippetContent p {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+div#infoSnippetContainer div#infoSnippetContent span {
+  color: black;
+}
