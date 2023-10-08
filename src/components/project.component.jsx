@@ -21,7 +21,7 @@ const Project = ({ data }) => {
       </div>
 
       <div id={classes.projectFooter}>
-        <ProgressBar data={{ progress: data.progress }} />
+      <ProgressBar data={{ progress: data.progress }} />
         <span>$ {data.budget}</span>
       </div>
     </div>
